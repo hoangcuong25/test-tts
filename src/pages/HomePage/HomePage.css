@@ -1,0 +1,202 @@
+/* =====================================
+   SECTION 1: HERO / HOME BANNER
+===================================== */
+.home-container {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #f9fbfd;
+    overflow: hidden;
+}
+
+.home-banner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80%;
+    width: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    padding: 4rem 2rem;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1e1e2f;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.home-description {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.home-button {
+    background: linear-gradient(to right, #a259ff, #6a6bff);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.home-button:hover {
+    background: linear-gradient(to right, #9250ff, #5454ff);
+}
+
+/* =====================================
+   SECTION 2: INFO SECTION
+===================================== */
+.info-section {
+    background-color: #fbe7f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    margin: 3rem auto;
+    gap: 3rem;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 30px rgba(240, 120, 200, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.info-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+.info-content {
+    max-width: 500px;
+    color: #16168d;
+}
+
+.info-content h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2d1c77;
+    line-height: 1.3;
+}
+
+.info-content p {
+    font-size: 1.15rem;
+    color: #5e3b58;
+    line-height: 1.7;
+}
+
+/* =====================================
+   SECTION 3: FEATURES SECTION
+===================================== */
+.features-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #f9fbfd;
+}
+
+.features-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #16168d;
+    margin-bottom: 1rem;
+}
+
+.features-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cột */
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Feature card layout ngang */
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card-image img {
+    width: 150px;
+    height: auto;
+}
+
+.feature-card-text {
+    flex: 1;
+}
+
+.feature-card-text h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1e1e2f;
+}
+
+.feature-card-text p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.feature-card-text a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.feature-card-text a:hover {
+    text-decoration: underline;
+}
+
+/* Background colors */
+.feature-blue {
+    background-color: #e8f5f9;
+}
+
+.feature-purple {
+    background-color: #efeafe;
+}
+
+.feature-pink {
+    background-color: #fbe7f8;
+}
+
+.feature-cyan {
+    background-color: #e3f2fd;
+}
