@@ -93,6 +93,20 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Section 5: Try For Free */}
+            <div className="try-section">
+                <div className="try-content">
+                    <h2>Try for free!</h2>
+                    <p>Get limited 1 week free try our features!</p>
+                </div>
+                <div className="try-buttons">
+                    <button className="try-learn-button">Learn more</button>
+                    <button className="try-demo-button">
+                        Request Demo <span className="arrow">→</span>
+                    </button>
+                </div>
+            </div>
         </>
     );
 };

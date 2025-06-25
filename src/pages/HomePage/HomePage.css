@@ -200,3 +200,83 @@
 .feature-cyan {
     background-color: #e3f2fd;
 }
+
+/* =====================================
+   SECTION 5: TRY FOR FREE SECTION
+===================================== */
+.try-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #f9fbfd;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.try-content h2 {
+    font-size: 2.2rem;
+    color: #1e1e2f;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.try-content p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.try-buttons {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.try-learn-button {
+    background-color: #ec4899;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.try-learn-button:hover {
+    background-color: #db2777;
+}
+
+.try-demo-button {
+    background-color: #fff;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 999px;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.try-demo-button .arrow {
+    color: #a855f7;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.try-demo-button:hover .arrow {
+    transform: translateX(4px);
+}
