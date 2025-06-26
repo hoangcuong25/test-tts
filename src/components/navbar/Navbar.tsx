@@ -1,4 +1,3 @@
-import { FaArrowRight } from 'react-icons/fa';
 import "./Navbar.css";
 import logo from '../../assets/logo.png';
 
@@ -17,8 +16,7 @@ const Navbar = () => {
             </div>
 
             <button className="navbar-button">
-                <span>Request Demo</span>
-                <FaArrowRight className="arrow-icon" />
+                <span>Sign In</span>
             </button>
         </nav>
     );

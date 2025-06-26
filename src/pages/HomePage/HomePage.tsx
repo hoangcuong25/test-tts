@@ -7,6 +7,7 @@ import feature1 from '../../assets/feature1.png';
 import feature2 from '../../assets/feature2.png';
 import feature3 from '../../assets/feature3.png';
 import feature4 from '../../assets/feature4.png';
+import TestimonialSlider from '../../components/TestimonialSlider/TestimonialSlider';
 
 const HomePage = () => {
     return (
@@ -93,6 +94,9 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Section 4: Testimonials */}
+            <TestimonialSlider />
 
             {/* Section 5: Try For Free */}
             <div className="try-section">

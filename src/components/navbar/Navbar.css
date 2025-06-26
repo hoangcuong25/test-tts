@@ -40,18 +40,18 @@
 .navbar-button {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
     background-color: #ffffff;
     color: #374151;
     font-weight: 600;
     border: none;
     border-radius: 999px;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     cursor: pointer;
     transition: all 0.3s;
     height: 60px;
-    width: 220px;
+    width: 180px;
     font-weight: 600;
     font-size: 16px;
 }

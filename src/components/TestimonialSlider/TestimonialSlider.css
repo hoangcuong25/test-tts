@@ -1,0 +1,87 @@
+.testimonial-section {
+    background: #a163e3;
+    padding: 4rem 2rem;
+    border-radius: 3rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.testimonial-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card {
+    background: white;
+    color: #1e1e2f;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.card a {
+    color: #a163e3;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.dots {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 100%;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background-color: white;
+}
