@@ -1,7 +1,11 @@
 import "./Navbar.css";
 import logo from '../../assets/logo.png';
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+    const navigate = useNavigate();
+
     return (
         <nav className="navbar">
             <div className="navbar-left">
@@ -15,7 +19,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <button className="navbar-button">
+            <button className="navbar-button" onClick={() => navigate('/signin')}>
                 <span>Sign In</span>
             </button>
         </nav>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './TestimonialSlider.css';
-import { getTestimonials } from '../../apis/Testimonial';
+import { getTestimonialsApi } from '../../apis/Testimonial.apis';
 
 export default function TestimonialSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,7 +8,7 @@ export default function TestimonialSlider() {
 
     useEffect(() => {
         const fetchTestimonials = async () => {
-            const data = await getTestimonials();
+            const data = await getTestimonialsApi();
             setTestimonials(data);
         };
 
