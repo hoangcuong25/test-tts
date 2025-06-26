@@ -21,28 +21,28 @@ axiosClient.interceptors.response.use(
         const originalRequest = error.config;
         if (error.response?.status === 401 && !originalRequest._retry) {
             originalRequest._retry = true;
-            const refreshToken = localStorage.getItem('refresh_token');
+            const refreshToken = localStorage.getItem('refreshToken');
 
             if (!refreshToken) {
                 return Promise.reject(error);
             }
 
             try {
-                const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/oauth/refresh-token`, {}, {
+                const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/auth/refresh-token`, {}, {
                     headers: { refreshToken }
                 })
 
-                const newAccessToken = res.data.access_token;
+                const newAccessToken = res.data.accessToken;
                 if (newAccessToken) {
-                    localStorage.setItem('access_token', newAccessToken);
+                    localStorage.setItem('accessToken', newAccessToken);
                     originalRequest.headers.Authorization = `Bearer ${newAccessToken}`;
 
                     return axiosClient(originalRequest);
                 }
             } catch (refreshError) {
                 console.error('Token refresh failed')
-                localStorage.removeItem('access_token');
-                localStorage.removeItem('refresh_token');
+                localStorage.removeItem('accessToken');
+                localStorage.removeItem('refreshToken');
 
                 return Promise.reject(refreshError)
             }
