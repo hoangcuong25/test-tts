@@ -1,0 +1,17 @@
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar-wrapper {
+    width: 220px;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+.content-wrapper {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    overflow-y: auto;
+}

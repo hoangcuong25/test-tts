@@ -1,0 +1,47 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+.profile-button {
+    background: white;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.dot-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.purple {
+    background-color: #a259ff;
+}
+
+.pink {
+    background-color: #f15bb5;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
