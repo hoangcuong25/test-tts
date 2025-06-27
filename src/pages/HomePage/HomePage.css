@@ -280,3 +280,128 @@
 .try-demo-button:hover .arrow {
     transform: translateX(4px);
 }
+
+/* ================================
+     RESPONSIVE DESIGN
+================================= */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .feature-card-image img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .home-banner {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .home-content {
+        padding: 2rem 1rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home-title {
+        font-size: 2.5rem;
+    }
+
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .info-image img {
+        max-width: 100%;
+    }
+
+    .info-content {
+        max-width: 100%;
+    }
+
+    .try-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 1rem;
+        text-align: left;
+    }
+
+    .try-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .try-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .try-buttons button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-description {
+        font-size: 1rem;
+    }
+
+    .features-title {
+        font-size: 2rem;
+    }
+
+    .features-subtitle {
+        font-size: 1rem;
+    }
+
+    .feature-card-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card-text p,
+    .feature-card-text a {
+        font-size: 0.9rem;
+    }
+
+    .try-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .try-content p {
+        font-size: 0.95rem;
+    }
+
+    .try-learn-button,
+    .try-demo-button {
+        font-size: 0.95rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .arrow {
+        font-size: 1rem;
+    }
+}

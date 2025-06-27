@@ -8,6 +8,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .add-button {
@@ -17,14 +19,19 @@
     border: none;
     border-radius: 999px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .filter-group {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
 }
 
 .filter-group input {
+    flex: 1 1 120px;
     padding: 6px 10px;
     border: 1px solid #999;
     border-radius: 4px;
@@ -70,6 +77,10 @@
 .pagination {
     text-align: right;
     margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .pagination button {
@@ -78,4 +89,30 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-button {
+        width: 100%;
+    }
+
+    .filter-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .pagination button {
+        width: 100%;
+    }
 }

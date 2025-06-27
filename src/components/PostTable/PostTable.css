@@ -35,3 +35,43 @@
 .icon-button:hover {
     color: #1f2937;
 }
+
+/* Responsive table */
+@media (max-width: 768px) {
+
+    .profile-table,
+    .profile-table thead,
+    .profile-table tbody,
+    .profile-table th,
+    .profile-table td,
+    .profile-table tr {
+        display: block;
+    }
+
+    .profile-table thead {
+        display: none;
+    }
+
+    .profile-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 0.5rem;
+        background: #fff;
+    }
+
+    .profile-table td {
+        border: none;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.95rem;
+    }
+
+    .profile-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #374151;
+    }
+}
